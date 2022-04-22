@@ -1,0 +1,287 @@
+[
+    {
+        "bounds": {
+            "northeast": {
+                "lat": -15.9398442,
+                "lng": -48.0260742
+            },
+            "southwest": {
+                "lat": -15.9624219,
+                "lng": -48.0397421
+            }
+        },
+        "copyrights": "Map data ©2022",
+        "legs": [
+            {
+                "distance": {
+                    "text": "3,6 km",
+                    "value": 3561
+                },
+                "duration": {
+                    "text": "43 minutos",
+                    "value": 2585
+                },
+                "end_address": "4-1 - Riacho Fundo II-3A Etapa - Riacho Fundo II, Brasília - DF, 70297-400, Brasil",
+                "end_location": {
+                    "lat": -15.940143,
+                    "lng": -48.0397421
+                },
+                "start_address": "Sh Ponte Alta Norte/Cond Residêncial Costa do Sol, 7 - Asa Norte, Brasília - DF, 70297-400, Brasil",
+                "start_location": {
+                    "lat": -15.961344,
+                    "lng": -48.0301037
+                },
+                "steps": [
+                    {
+                        "distance": {
+                            "text": "0,2 km",
+                            "value": 153
+                        },
+                        "duration": {
+                            "text": "2 minutos",
+                            "value": 106
+                        },
+                        "end_location": {
+                            "lat": -15.9624219,
+                            "lng": -48.029208
+                        },
+                        "html_instructions": "Siga na direção <b>sudeste</b> na <b>Adonai Road</b> em direção a <b>Núcleo Rural Ponte Alta Norte</b><div style=\"font-size:0.9em\">Estrada de uso restrito</div>",
+                        "polyline": {
+                            "points": "jml`Bb{cdHfAy@^YnB}A"
+                        },
+                        "start_location": {
+                            "lat": -15.961344,
+                            "lng": -48.0301037
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0,1 km",
+                            "value": 106
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 79
+                        },
+                        "end_location": {
+                            "lat": -15.9617953,
+                            "lng": -48.02846520000001
+                        },
+                        "html_instructions": "Vire à <b>esquerda</b> na <b>Núcleo Rural Ponte Alta Norte</b>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "btl`BpucdHeAwAMOg@k@"
+                        },
+                        "start_location": {
+                            "lat": -15.9624219,
+                            "lng": -48.029208
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0,3 km",
+                            "value": 305
+                        },
+                        "duration": {
+                            "text": "4 minutos",
+                            "value": 229
+                        },
+                        "end_location": {
+                            "lat": -15.9600774,
+                            "lng": -48.0262381
+                        },
+                        "html_instructions": "Continue para <b>R. JK</b>",
+                        "polyline": {
+                            "points": "fpl`B|pcdHw@kAs@cAKMKQcAsAiBgCe@q@"
+                        },
+                        "start_location": {
+                            "lat": -15.9617953,
+                            "lng": -48.02846520000001
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "23 m",
+                            "value": 23
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 18
+                        },
+                        "end_location": {
+                            "lat": -15.9599457,
+                            "lng": -48.0260742
+                        },
+                        "html_instructions": "Continue em frente na <b>Riacho Fundo II-3A Etapa</b>",
+                        "maneuver": "straight",
+                        "polyline": {
+                            "points": "nel`B~bcdHCCU]"
+                        },
+                        "start_location": {
+                            "lat": -15.9600774,
+                            "lng": -48.0262381
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0,5 km",
+                            "value": 501
+                        },
+                        "duration": {
+                            "text": "6 minutos",
+                            "value": 372
+                        },
+                        "end_location": {
+                            "lat": -15.956455,
+                            "lng": -48.029037
+                        },
+                        "html_instructions": "Vire à <b>esquerda</b> na <b>BR-251</b>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "tdl`B|acdHu@j@a@\\cDlCUNqAdAy@n@}@r@UTsAfAo@f@m@f@IFKH"
+                        },
+                        "start_location": {
+                            "lat": -15.9599457,
+                            "lng": -48.0260742
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "20 m",
+                            "value": 20
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 24
+                        },
+                        "end_location": {
+                            "lat": -15.9563148,
+                            "lng": -48.0289291
+                        },
+                        "html_instructions": "Vire à <b>direita</b> em direção à <b>BR-251</b>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "znk`BntcdHEICCGEKA"
+                        },
+                        "start_location": {
+                            "lat": -15.956455,
+                            "lng": -48.029037
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "1,9 km",
+                            "value": 1860
+                        },
+                        "duration": {
+                            "text": "22 minutos",
+                            "value": 1309
+                        },
+                        "end_location": {
+                            "lat": -15.9431829,
+                            "lng": -48.0396857
+                        },
+                        "html_instructions": "Vire à <b>esquerda</b> na <b>BR-251</b>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "|mk`BxscdHUPk@d@{ExDoGdFoB|AYVYT}EzDqB`BYTkA~@kBzAmB|AeBtAmCvBcAx@oEpDc@\\CBMJ_@Xg@`@m@b@KF[T]V}@l@eAr@SNg@\\eAn@YPEBu@b@kBjA]P"
+                        },
+                        "start_location": {
+                            "lat": -15.9563148,
+                            "lng": -48.0289291
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0,2 km",
+                            "value": 196
+                        },
+                        "duration": {
+                            "text": "3 minutos",
+                            "value": 154
+                        },
+                        "end_location": {
+                            "lat": -15.9423924,
+                            "lng": -48.03805939999999
+                        },
+                        "html_instructions": "Vire à <b>direita</b> na <b>Riacho Fundo II | 3A Etapa Qs 12 Conjunto 1</b><div style=\"font-size:0.9em\">Passe o parque (à direita em 160&nbsp;m)</div>",
+                        "maneuver": "turn-right",
+                        "polyline": {
+                            "points": "z{h`B`wedHa@{@e@aAYm@IQGQCMEOK_@Sw@"
+                        },
+                        "start_location": {
+                            "lat": -15.9431829,
+                            "lng": -48.0396857
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0,3 km",
+                            "value": 301
+                        },
+                        "duration": {
+                            "text": "4 minutos",
+                            "value": 221
+                        },
+                        "end_location": {
+                            "lat": -15.9398442,
+                            "lng": -48.0389061
+                        },
+                        "html_instructions": "Na rotatória, pegue a <b>2ª</b> saída para a <b>Avenida Riacho Fundo II</b>/<wbr/><b>Riacho Fundo II | 3A Etapa Qs 12 Conjunto 1</b><div style=\"font-size:0.9em\">Continue na Avenida Riacho Fundo II</div>",
+                        "maneuver": "roundabout-right",
+                        "polyline": {
+                            "points": "|vh`BzledHE@A@C?A@E?CAIAKEiFvAOD}DdAWH"
+                        },
+                        "start_location": {
+                            "lat": -15.9423924,
+                            "lng": -48.03805939999999
+                        },
+                        "travel_mode": "WALKING"
+                    },
+                    {
+                        "distance": {
+                            "text": "0,1 km",
+                            "value": 96
+                        },
+                        "duration": {
+                            "text": "1 min",
+                            "value": 73
+                        },
+                        "end_location": {
+                            "lat": -15.940143,
+                            "lng": -48.0397421
+                        },
+                        "html_instructions": "Vire à <b>esquerda</b> na <b>Riacho Fundo II | 3A Etapa Qs 9 Conjunto 1</b>",
+                        "maneuver": "turn-left",
+                        "polyline": {
+                            "points": "~fh`BdredHNVb@fB@HBH?B@F?D"
+                        },
+                        "start_location": {
+                            "lat": -15.9398442,
+                            "lng": -48.0389061
+                        },
+                        "travel_mode": "WALKING"
+                    }
+                ],
+                "traffic_speed_entry": [],
+                "via_waypoint": []
+            }
+        ],
+        "overview_polyline": {
+            "points": "jml`Bb{cdHfBsAnB}AeAwAu@{@kBoCeE{Fi@u@U]u@j@eEjDgBtAaF`EsB`BIMSGmPvMaKfIiVxReG~EaCfB}DnC{CnBeEdCkB}D]oASw@E@E@UAKEiFvAmEjAWHNVd@pBDZ"
+        },
+        "summary": "BR-251",
+        "warnings": [
+            "Versão beta da rota a pé. Seja cuidadoso – Este trajeto pode não ter calçadas ou caminhos de pedestres."
+        ],
+        "waypoint_order": []
+    }
+]
