@@ -25,9 +25,9 @@ def detect_objects():
     model.setInputMean((127.5, 127.5, 127.5))
     model.setInputSwapRB(True)
 
-    #cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0)
     #cap = cv2.VideoCapture('london_walk.mp4')
-    cap = cv2.VideoCapture('Blind Man Walking.mp4')
+    #cap = cv2.VideoCapture('Blind Man Walking.mp4')
 
     
     font_scale = 3
@@ -46,7 +46,7 @@ def detect_objects():
                     cv2.rectangle(frame, boxes, (255, 0, 0), 2)
                     cv2.putText(frame, classLabels[ClassInd-1], (boxes[0]+10, boxes[1]+40), font, fontScale=font_scale, color=(0, 255, 0))
                     q.emit('detection', json.dumps({
-                        'name': classLabels[ClassInd-1]
+                        'name': classLabels[ClassInd-1],
                     }))
 
         cv2.imshow('Object Detection', frame)
