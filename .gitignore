@@ -1,2 +1,6 @@
 __pycache__/
 .env
+temp/
+*.mp4
+*.webm
+venv/

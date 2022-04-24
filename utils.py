@@ -75,4 +75,4 @@ def instrucao_texto(rota):
     print('=================================================================')
     trajetos.append('Você chegou no seu destino!')
 
-    return trajetos
+    return trajetos, rota[0]['legs'][0]['steps']
