@@ -63,7 +63,7 @@ class ModuloSom(object):
         # google_voice('')
         try:
             print('Gravar Resposta')
-            recording = self.record(duration = 3)
+            recording = self.record(duration = 5)
             data_audio = self.generate_audio(recording)
             print('Resposta:', self.transcricao_audio(data_audio))
             print('Gravação Encerrada')

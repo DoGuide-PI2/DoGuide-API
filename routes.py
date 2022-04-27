@@ -14,25 +14,24 @@ sonoplastia = ModuloSom()
 maas = MaaS()
 q = Queue()
 
-def get_directions(coordenada_atual, destino):
+def get_directions(coordenada_atual, destino):    
+    sonoplastia.google_voice('Calculando Rota. Por favor, aguarde...')
     
-    if(sonoplastia.confirma_destino()):
-        sonoplastia.google_voice('Calculando Rota. Por favor, aguarde...')
-        
-        coordenada_destino = maas.destino(destino)
-        rota = maas.instrucao_percurso(coordenada_atual, coordenada_destino)
+    coordenada_destino = maas.destino(destino)
+    rota = maas.instrucao_percurso(coordenada_atual, coordenada_destino)
 
-        instrucoes, steps = instrucao_texto(rota)
+    instrucoes, steps = instrucao_texto(rota)
 
-        for i in range(0, len(instrucoes)):
-            q.emit('direction', json.dumps(steps[i]))
-            # print(instrucao)
-            sonoplastia.google_voice(instrucoes[i])
-            time.sleep(5)
+    for i in range(0, len(instrucoes)):
+        q.emit('control', json.dumps({
+            **steps[i],
+            'action': 'direction',
+            'instruction': instrucoes[i]
+        }))
+        # print(instrucao)
+        sonoplastia.google_voice(instrucoes[i])
+        time.sleep(5)
 
-    else:
-        sonoplastia.google_voice('refazendo o processo')
-        get_route()
 
 def get_route():
     coordenada_atual = maas.local_partida()
@@ -51,7 +50,11 @@ def get_route():
     sonoplastia.google_voice('Você deseja ir para ' + destino)
     sonoplastia.google_voice('Confirma ' + destino + ' como seu destino?????')
 
-    return coordenada_atual, destino
+    if(sonoplastia.confirma_destino()):
+        return coordenada_atual, destino
+    else:
+        sonoplastia.google_voice('refazendo o processo')
+        get_route()
 
 def exit():
         return False    

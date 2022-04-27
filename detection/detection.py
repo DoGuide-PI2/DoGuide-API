@@ -1,4 +1,5 @@
 import json
+import time
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -45,8 +46,9 @@ def detect_objects():
                 if (ClassInd <= 80):
                     cv2.rectangle(frame, boxes, (255, 0, 0), 2)
                     cv2.putText(frame, classLabels[ClassInd-1], (boxes[0]+10, boxes[1]+40), font, fontScale=font_scale, color=(0, 255, 0))
-                    q.emit('detection', json.dumps({
+                    q.emit('control', json.dumps({
                         'name': classLabels[ClassInd-1],
+                        'action': 'detection'
                     }))
 
         cv2.imshow('Object Detection', frame)
