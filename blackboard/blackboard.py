@@ -1,7 +1,8 @@
 import json
 import pika
-import time
-from random import randrange
+from som.audio import ModuloSom
+
+sonoplastia = ModuloSom()
 
 class Blackboard:
     def __init__(self) -> None:
@@ -9,6 +10,8 @@ class Blackboard:
         self.connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
         self.channel = self.connection.channel()
         self.channel.queue_declare(queue=self.queue)
+        self.check_obstacle = False
+        self.directions = []
 
 
     def callback(self, ch, method, properties, body):
@@ -20,9 +23,20 @@ class Blackboard:
         action = body['action']
 
         if action == 'detection':
-            print('DETECTION: Objeto "{}" detectado em frente ao robô, desvie do objeto de acordo as definições enviadas'.format(body['name']))
+            print('DETECTION: Objeto "{}" detectado'.format(body['name']))
+            if self.check_obstacle is False:
+                sonoplastia.google_voice('Objeto "{}" detectado em frente ao robô. Atenção.'.format(body['name']))
+                self.check_obstacle = True
+
         elif action == 'direction':
-            print('DIRECTION: ' + body['instruction'])
+            self.directions.append(body['instruction'])
+        
+        elif action == 'no_detection':
+            if len(self.directions) > 0:
+                direction = self.directions.pop(0)
+                print('DIRECTION: ' + direction)
+                sonoplastia.google_voice(direction)
+                self.check_obstacle = False            
             
     def run(self):
         self.channel.basic_qos(prefetch_count=1)

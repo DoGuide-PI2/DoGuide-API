@@ -29,8 +29,8 @@ def get_directions(coordenada_atual, destino):
             'instruction': instrucoes[i]
         }))
         # print(instrucao)
-        sonoplastia.google_voice(instrucoes[i])
-        time.sleep(5)
+        #sonoplastia.google_voice(instrucoes[i])
+        time.sleep(10)
 
 
 def get_route():
@@ -57,7 +57,7 @@ def get_route():
         get_route()
 
 def exit():
-        return False    
+        return False
 
 
 # if __name__ == '__main__':

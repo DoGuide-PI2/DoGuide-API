@@ -50,6 +50,10 @@ def detect_objects():
                         'name': classLabels[ClassInd-1],
                         'action': 'detection'
                     }))
+        else:
+            q.emit('control', json.dumps({
+                'action': 'no_detection'
+            }))
 
         cv2.imshow('Object Detection', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
